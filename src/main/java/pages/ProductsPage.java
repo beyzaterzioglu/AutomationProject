@@ -90,6 +90,7 @@ public class ProductsPage extends PageObject {
     }
 
     private double normalizePrice(String price) {
+
         return Double.parseDouble(price.replace("$", "").trim());
     }
 

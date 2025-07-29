@@ -1,4 +1,4 @@
-package tests.ProductsPageTests;
+package tests;
 
 import base.BaseTest;
 import org.testng.Assert;
@@ -12,7 +12,7 @@ import static locators.ProductsPageLocators.itemAddtoCart;
 import static locators.ProductsPageLocators.itemRemoveFromCart;
 import static pages.ProductsPage.SortType.*;
 
-public class ProductsPagePositiveTests extends BaseTest {
+public class ProductsPageTests extends BaseTest {
 
     @Test
     public void logOutTest()

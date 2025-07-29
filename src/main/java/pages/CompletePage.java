@@ -3,8 +3,8 @@ package pages;
 import org.openqa.selenium.WebDriver;
 
 import static expected.GeneralExpecteds.*;
-import static locators.CompletePageLocators.backHomeButton;
-import static locators.CompletePageLocators.message;
+import static locators.CartPageLocators.cartPageHeader;
+import static locators.CompletePageLocators.*;
 import static locators.ProductsPageLocators.productsPageHeader;
 
 public class CompletePage extends PageObject{
@@ -13,9 +13,13 @@ public class CompletePage extends PageObject{
 
         super(driver);
     }
-
+    public boolean checkHeader()
+    {
+        return driver.findElement(completePageHeader).getText().equals(EXPECTED_COMPLETE_PAGE_HEADER);
+    }
     public boolean checkMessage()
     {
+
         return driver.findElement(message).getText().equals(EXPECTED_MESSAGE);
     }
     public boolean checkBackHomeButtonProperty()

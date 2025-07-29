@@ -20,7 +20,7 @@ public class ProductDetailsPage extends PageObject {
     }
    public boolean checkItemDetailsHeader()
    {
-       String header=productHeader();
+       String header=productHeader(firstItemName);
        openDetailPage();
        return header.equals(driver.findElement(itemHead).getText());
    }

@@ -15,6 +15,14 @@ import static locators.ProductDetailsPageLocators.removeButton;
 public class CartPageTests extends BaseTest {
 
     @Test
+    public void checkPageHeader() {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login();
+        CartPage cartPage=new CartPage(driver);
+        cartPage.openCartPage();
+        Assert.assertTrue(cartPage.checkHeader());
+    }
+    @Test
     public void checkAddCartButtonProperty() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login();

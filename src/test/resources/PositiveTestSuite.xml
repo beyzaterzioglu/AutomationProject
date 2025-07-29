@@ -3,6 +3,12 @@
     <test name="Pozitive Tests">
         <classes>
             <class name="tests.LoginPageTests.PositiveLoginPageTests"/>
+            <class name="tests.CheckoutPageTests.PositiveCheckoutPageTests"/>
+            <class name="tests.ProductsPageTests"/>
+            <class name="tests.CartPageTests"/>
+            <class name="tests.CompletePageTests"/>
+            <class name="tests.OverviewPageTests"/>
+            <class name="tests.ProductDetailsPageTests"/>
         </classes>
     </test>
 </suite>

@@ -9,4 +9,5 @@ public class CheckoutPageLocators {
     public static final By continueButton=By.xpath("//input[@id='continue']");
     public static final By cancelButton=By.xpath("//button[@id='cancel']");
     public static final By checkoutPageHeader=By.xpath("//span[@class='title']");
+    public static final By errorMessageField=By.xpath("//h3[@data-test='error']");
 }

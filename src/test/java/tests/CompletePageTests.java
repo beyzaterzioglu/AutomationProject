@@ -3,12 +3,17 @@ package tests;
 import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.CheckoutPage;
-import pages.CompletePage;
-import pages.LoginPage;
-import pages.OverviewPage;
+import pages.*;
 
 public class CompletePageTests extends BaseTest {
+    @Test
+    public void checkPageHeader() {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login();
+        CompletePage completePage=new CompletePage(driver);
+        completePage.openCompletePage();
+        Assert.assertTrue(completePage.checkHeader());
+    }
     @Test
     public void checkTheMessage() {
         LoginPage loginPage = new LoginPage(driver);

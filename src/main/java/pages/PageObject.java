@@ -69,12 +69,18 @@ public class PageObject {
             e.printStackTrace();
         }
     }
-    public String productHeader() {
+    public String productHeader(By firstItemName) {
 
         return driver.findElement(firstItemName).getText();
     }
+    public String productPrice() {
+
+        return driver.findElement(itemPrice).getText();
+    }
+
     public void openCartPage()
     {
+
         driver.findElement(cartButton).click();
     }
     public void openCheckoutPage()
@@ -86,7 +92,9 @@ public class PageObject {
     public void openOverviewPage()
     {
         openCheckoutPage();
-        fillTheBlanks();
+        fillTheNameField();
+        fillTheLastnameField();
+        fillTheZipCodeField();
         driver.findElement(continueButton).click();
     }
     public void openCompletePage()
@@ -123,10 +131,16 @@ public class PageObject {
         }
         return itemNames;
     }
-    public void fillTheBlanks()
+    public void fillTheNameField()
     {
         driver.findElement(firstName).sendKeys(FIRST_NAME);
+    }
+    public void fillTheLastnameField()
+    {
         driver.findElement(lastName).sendKeys(LAST_NAME);
+    }
+    public void fillTheZipCodeField()
+    {
         driver.findElement(zipCode).sendKeys(ZIP_CODE);
     }
 

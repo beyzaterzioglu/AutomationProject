@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 
+import static expected.GeneralExpecteds.EXPECTED_CART_PAGE_HEADER;
 import static locators.CartPageLocators.*;
 import static locators.ProductsPageLocators.firstItemName;
 import static locators.ProductsPageLocators.itemAddtoCart;
@@ -12,10 +13,13 @@ public class CartPage extends PageObject{
         super(driver);
     }
 
-
+    public boolean checkHeader()
+    {
+        return driver.findElement(cartPageHeader).getText().equals(EXPECTED_CART_PAGE_HEADER);
+    }
     public boolean checkItemHead()
     {
-        String header = productHeader();
+        String header = productHeader(firstItemName);
         addToCart(itemAddtoCart);
         openCartPage();
         return header.equals(driver.findElement(firstItemHeader).getText());
