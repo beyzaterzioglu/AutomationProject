@@ -14,7 +14,7 @@ public class NegativeLoginPageTests extends BaseTest {
     public void loginWithoutUsernameTest()
     {
         LoginPage loginPage = new LoginPage(driver);
-        Assert.assertEquals(loginPage.loginWithoutUsername(),ERROR_MESSAGE_IF_PASSWORD_OR_USERNAME_INVALID);
+        Assert.assertEquals(loginPage.loginWithoutUsername(),ERROR_MESSAGE_IF_USERNAME_IS_REQUIRED);
     }
     @Test
     public void loginWithoutPasswordTest()
