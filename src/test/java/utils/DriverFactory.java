@@ -17,6 +17,13 @@ public class DriverFactory {
 
     private static WebDriver driver;
 
+    public static WebDriver getDriver() {
+        if (driver == null) {
+            return getDriver("chrome");  // Default olarak chrome başlat
+        }
+        return driver;
+    }
+
     public static WebDriver getDriver(String browser) {
         if (driver == null) {
             switch (browser.toLowerCase()) {

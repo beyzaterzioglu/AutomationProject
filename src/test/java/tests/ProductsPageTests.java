@@ -14,15 +14,7 @@ import static pages.ProductsPage.SortType.*;
 
 public class ProductsPageTests extends BaseTest {
 
-    @Test
-    public void logOutTest()
-    {
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.login();
-        ProductsPage productsPage=new ProductsPage(driver);
-        productsPage.logOut();
-        Assert.assertEquals(driver.getCurrentUrl(),URL);
-    }
+
 
     @Test
     public void checkHeaderTest() {

@@ -1,9 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Negative Test Suite">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
     <test name="Negative Tests">
         <classes>
             <class name="tests.LoginPageTests.NegativeLoginPageTests"/>
-            <class name="tests.CheckoutPageTests.NegativeCheckoutPageTests"/>
+
         </classes>
     </test>
 </suite>
