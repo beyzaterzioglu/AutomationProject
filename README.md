@@ -1,21 +1,57 @@
 # Swag Labs Automation Project
 
-## About the Project
-This is an automation testing project for the Swag Labs website. The project covers core functionalities with detailed tests for LoginPage, CheckoutPage, CartPage, CompletePage, OverviewPage, ProductDetailsPage, and ProductsPage using Selenium WebDriver.
+## 📌 About the Project
+This is an automation testing project for the **Swag Labs** demo website.  
+The project covers core functionalities with detailed tests for:
+- **Login Page**
+- **Products Page**
+- **Product Details Page**
+- **Cart Page**
+- **Checkout Page**
+- **Overview Page**
+- **Complete Page**
 
-## Features
+
+## 🚀 Features
 - Login test
-- Products Page Tests
-- Product Details Page Tests
-- Cart Page Tests
-- Checkout Page Tests
-- Overview Page Tests
-- Complete Page Tests
+- Products Page tests
+- Product Details Page tests
+- Cart Page tests
+- Checkout Page tests
+- Overview Page tests
+- Complete Page tests
+- Detailed HTML reports with **Extent Reports**
+- CI/CD integration with Jenkins
 
-## Technologies
-- Java 17
-- Selenium WebDriver
-- TestNG
-- Maven 
-- WebDriverManager
-- Extent Reports.
+
+## 🛠 Technologies
+| Technology         | Purpose                        |
+|--------------------|--------------------------------|
+| Java 17            | Programming language           |
+| Selenium WebDriver | UI automation library          |
+| TestNG             | Testing framework              |
+| Maven              | Dependency & build management  |
+| WebDriverManager   | Automatic driver management    |
+| Extent Reports     | Test reporting                  |
+| Jenkins            | Continuous Integration (CI)    |
+
+## 📂 Project Structure
+├── src/main/java
+    ├── expected   
+    ├── locators    
+    ├── pages 
+├── src/test/java
+    ├── base
+    ├── listeners
+    ├── tests
+    ├── utils
+├── Jenkinsfile
+├── pom.xml
+├── README.md
+
+## ⚙️ Installation
+1. Install **Java 17** 
+2. Install **Maven** 
+3. Clone the repository.
+
+
