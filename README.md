@@ -54,5 +54,5 @@ The project covers core functionalities with detailed tests for:
 2. Install **Maven** 
 3. Clone the repository.
 
-📄 License
+##  📄 License
 This project is for educational and demonstration purposes only.
