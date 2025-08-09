@@ -18,4 +18,4 @@ This is an automation testing project for the Swag Labs website. The project cov
 - TestNG
 - Maven 
 - WebDriverManager
-- Extent Reports
+- Extent Reports.
